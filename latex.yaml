@@ -1,4 +1,3 @@
-from: markdown+pipe_tables
 to: pdf
 pdf-engine: xelatex
 variables:
