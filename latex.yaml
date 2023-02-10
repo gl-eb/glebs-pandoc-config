@@ -1,0 +1,34 @@
+from: markdown+pipe_tables
+to: pdf
+pdf-engine: xelatex
+variables:
+    papersize: a4
+    geometry:
+    - top=25mm
+    - bottom=25mm
+    - left=20mm
+    - right=20mm
+    lang: en
+    mainfont: "DejaVu Serif"
+    header-includes: |-
+        % allow deeply nested unnumbered lists
+        \usepackage{enumitem}
+        \setlistdepth{9}
+        \setlist[itemize,1]{label=\textbullet}
+        \setlist[itemize,2]{label=\textminus}
+        \setlist[itemize,3]{label=\textasteriskcentered}
+        \setlist[itemize,4]{label=$\cdot$}
+        \setlist[itemize,5]{label=$\cdot$}
+        \setlist[itemize,6]{label=$\cdot$}
+        \setlist[itemize,7]{label=$\cdot$}
+        \setlist[itemize,8]{label=$\cdot$}
+        \setlist[itemize,9]{label=$\cdot$}
+        \renewlist{itemize}{itemize}{9}
+        % allow adding headers and footers
+        \usepackage{fancyhdr}
+        \pagestyle{fancy}
+        \fancyhf{}
+    include-before: |-
+        % add header with author name and date as well as footer with page number
+        \fancyhead[R]{\small \ttfamily Gleb Ebert - \today}
+        \fancyfoot[C]{\thepage}
