@@ -10,6 +10,11 @@ variables:
     lang: en
     mainfont: "DejaVu Serif"
     fontsize: 10
+    linkcolor: ForestGreen
+    filecolor: ForestGreen
+    citecolor: ForestGreen
+    urlcolor: ForestGreen
+    toccolor: ForestGreen
     header-includes: |-
         % allow deeply nested unnumbered lists
         \usepackage{enumitem}
