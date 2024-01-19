@@ -3,7 +3,7 @@ pdf-engine: xelatex
 variables:
     papersize: a4
     geometry:
-    - top=25mm
+    - top=20mm
     - bottom=25mm
     - left=20mm
     - right=20mm
