@@ -9,7 +9,7 @@ variables:
     - right=20mm
     lang: en
     mainfont: "DejaVu Serif"
-    fontsize: 10
+    fontsize: 10pt
     linkcolor: ForestGreen
     filecolor: ForestGreen
     citecolor: ForestGreen
