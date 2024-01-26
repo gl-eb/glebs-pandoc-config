@@ -1,0 +1,9 @@
+to: pdf
+pdf-engine: typst
+variables:
+    papersize: a4
+    margin:
+      x: 20mm
+      top: 20mm
+      bottom: 25mm
+    fontsize: 10pt
